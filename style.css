@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Kiwi Maru", serif;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+
+/*-----------Nav Style Comment----------*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(198, 212, 2, 0.7);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color:#000000;
+    
+
+}
+nav ul{
+    display: flex;
+    
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 60px;
+    padding: 0px 17px;
+    display: flex;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#f3f317;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    
+    
+}
+.logo img{
+    width: 150px;
+    margin:8px;
+    padding-left: 100px;
+  
+}
+nav ul li a:hover{
+    border-left: 2px solid #e9c966;
+    border-bottom: 2px solid #e9c966;
+    box-shadow: 5px 10px 30px rgba(255, 217,0,0.4);
+}
+.active{
+    border-left: 2px solid #e9c966;
+    border-bottom: 2px solid #e9c966;
+    box-shadow: 5px 10px 30px rgba(255, 217,0,0.4);
+}
+#header{
+    width: 100%;
+    height: 768px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(image/down.jpg);
+    position: relative;
+}
+.header-heading{
+    width: 500px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-15%,-50%);
+}
+.header-heading h1{
+    font-size: 70px;
+    margin: 0px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #f3f317;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-heading h2{
+    color: #fff;
+    font-size: 40px;
+}
+.btn{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f317;
+    box-shadow: 5px 10px 30px rgba(8, 219, 57, 0.8);
+    color: black;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-weight: 500;
+    transition: 0.6s ease-out;
+    font-size: 14px;
+
+}
+.btn:hover{
+    background-color: #16ea32;
+    color: black;
+}
+#about{
+    width: 100%;
+    height: 130vh;
+    background-color: #000000;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+.about-img{
+    width: 50%;
+}
+.about-img img{
+    width: 500px;
+}
+.about-text{
+    width: 45%;
+    color: #fff;
+}
+.about-text h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #f3f317;
+    margin: 0px;
+    border-bottom: dotted;
+}
+.about-text h3{
+    font-size: 1.2rem;
+    color: #f3f317;
+
+}
+
+/*---------------------Games----------------*/
+#games{
+    width: 100%;
+    height: 170vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px 0px;
+    background-color: #1e1e1e;
+}
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-box{
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.4);
+    position: relative;
+}
+.game-img{
+    width: 100%;
+    height: 65%;
+}
+.game-img img{
+    width: 100%;
+    height: 100%;
+}
+.game-play{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+}
+.game-play h4{
+    margin: 0px;
+}
+.game-heading{
+    text-align: center;
+    color: #941d1d;
+    margin: 20px 0px;
+
+}
+.game-heading h1{
+    font-size: 2.3rem;
+    color: #f3f317;
+}
+.game-heading p{
+    color: #f3f317;
+}
+
+/*-------------------------footer-------------*/
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px ;
+    background-color: #000000;
+    text-align: center;
+}
+footer p{
+    font-size: 14px;
+    color: rgb(113, 105, 105);
+}
